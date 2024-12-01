@@ -1,12 +1,14 @@
-body {
-      font-family: Arial, sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+
+    body {
+      font-family: 'Quicksand', sans-serif;
       margin: 0;
       padding: 0;
       background-color: #f7f7f7;
       background-image: url('https://i.imgur.com/F6A6zfm.jpeg');
       background-size: cover;
       background-position: center;
-      background-attachment: fixed; /* Make the background fixed */
+      background-attachment: fixed;
       position: relative;
     }
 
@@ -17,7 +19,7 @@ body {
       right: 0;
       bottom: 0;
       left: 0;
-      background-color: rgba(0, 0, 0, 0.5); /* Increased opacity to 50% */
+      background-color: rgba(0, 0, 0, 0.85); /* Increased opacity to 85% */
       z-index: -1;
     }
 
@@ -53,14 +55,27 @@ body {
     }
 
     main {
+      display: flex;
       padding: 20px;
-      background-color: rgba(255, 255, 255, 0.9); /* Add a semi-transparent white background to the main content */
+    }
+
+    .content {
+      flex: 3;
+      background-color: rgba(255, 255, 255, 0.8); /* Lower opacity of the white background */
       border-radius: 5px;
-      margin: 20px;
+      padding: 20px;
+      margin-right: 20px;
+    }
+
+    .sidebar {
+      flex: 1;
+      background-color: rgba(255, 255, 255, 0.8); /* Lower opacity of the white background */
+      border-radius: 5px;
+      padding: 20px;
     }
 
     .post {
-      background-color: white;
+      background-color: rgba(255, 255, 255, 0.9); /* Lower opacity of the white background */
       border: 1px solid #ddd;
       border-radius: 5px;
       margin-bottom: 20px;
