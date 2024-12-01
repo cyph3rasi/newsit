@@ -67,13 +67,16 @@
 
     .sidebar {
       flex: 1;
-      background-color: rgba(255, 255, 255, 0.8); /* Lower opacity of the white background */
+      background: rgba(255, 255, 255, 0.8); /* Frosted glass effect */
+      backdrop-filter: blur(10px);
       border-radius: 5px;
       padding: 20px;
+      margin-bottom: 20px; /* Ensure it doesn't touch the footer */
     }
 
     .post {
-      background-color: transparent; /* Remove white background behind posts */
+      background: rgba(255, 255, 255, 0.8); /* Frosted glass effect */
+      backdrop-filter: blur(10px);
       border: 1px solid #ddd;
       border-radius: 5px;
       margin-bottom: 20px;
