@@ -19,7 +19,7 @@
       right: 0;
       bottom: 0;
       left: 0;
-      background-color: rgba(0, 0, 0, 0.85); /* Increased opacity to 85% */
+      background-color: rgba(0, 0, 0, 0.65); /* Set opacity to 65% */
       z-index: -1;
     }
 
@@ -61,8 +61,6 @@
 
     .content {
       flex: 3;
-      background-color: rgba(255, 255, 255, 0.8); /* Lower opacity of the white background */
-      border-radius: 5px;
       padding: 20px;
       margin-right: 20px;
     }
@@ -75,7 +73,7 @@
     }
 
     .post {
-      background-color: rgba(255, 255, 255, 0.9); /* Lower opacity of the white background */
+      background-color: transparent; /* Remove white background behind posts */
       border: 1px solid #ddd;
       border-radius: 5px;
       margin-bottom: 20px;
@@ -118,7 +116,7 @@
       background-color: #333;
       color: white;
       text-align: center;
-      padding: 10px 0;
+      padding: 5px 0; /* Make footer half as tall */
       position: fixed;
       width: 100%;
       bottom: 0;
